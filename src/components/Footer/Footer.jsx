@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 
+const BUSINESS_EMAIL = 'Anmolchaurasiya406@gmail.com'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
   return (
@@ -13,8 +15,9 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.grid}>
           <section className={styles.brand} aria-label="Site summary">
-            <Link to="/" className={styles.logo}>⌨ <span>SpacebarClickTest.net</span></Link>
-            <p>The fastest way to measure your spacebar speed. Free, fun, and accurate. Challenge yourself and beat your best score.</p>
+            <Link to="/" className={styles.logo}>SpacebarClickTest.net</Link>
+            <p>Free browser-based speed testing tools maintained by Anmol Chaurasiya, full-stack developer.</p>
+            <p><a href={`mailto:${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</a></p>
           </section>
           <nav className={styles.links} aria-label="Company links">
             <h4>Company</h4>
@@ -33,8 +36,8 @@ export default function Footer() {
           </nav>
         </div>
         <div className={styles.bottom}>
-          <p>© {currentYear} SpacebarClickTest.net — All rights reserved.</p>
-          <p>Built for gamers, typists & speed enthusiasts worldwide.</p>
+          <p>Copyright {currentYear} SpacebarClickTest.net. All rights reserved.</p>
+          <p>Built for gamers, typists, and speed enthusiasts worldwide.</p>
         </div>
       </div>
     </footer>

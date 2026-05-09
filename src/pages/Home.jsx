@@ -56,7 +56,6 @@ const TIPS = [
 const RELATED_TOOLS = [
   { to: '/cps-test', title: 'CPS Test', desc: 'Measure your mouse clicking speed in clicks per second.', icon: '🖱' },
   { to: '/keyboard-test', title: 'Keyboard Test', desc: 'Check which keys work and visualize every keystroke.', icon: '⌨' },
-  { to: '/spacebar-click-test', title: 'Spacebar Counter', desc: 'Count spacebar presses with no time limit.', icon: '📊' },
 ]
 
 export default function Home() {

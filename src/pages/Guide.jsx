@@ -37,15 +37,30 @@ export default function Guide() {
           <section className={styles.grid} aria-label="Guide articles">
             {blogPosts.map(post => (
               <article key={post.slug} className={`glass-card ${styles.card}`}>
-                <p className={styles.category}>{post.category}</p>
-                <h2>
-                  <Link to={`/guide/${post.slug}`}>{post.title}</Link>
-                </h2>
-                <p>{post.description}</p>
-                <footer className={styles.meta}>
-                  <time dateTime={post.date}>{post.date}</time>
-                  <span>{post.readTime}</span>
-                </footer>
+                <Link to={`/guide/${post.slug}`} className={styles.cardImageLink} aria-label={post.title}>
+                  <img
+                    className={styles.cardImage}
+                    src={post.image}
+                    alt={post.imageAlt}
+                    loading="lazy"
+                    decoding="async"
+                    width="960"
+                    height="540"
+                  />
+                </Link>
+                <div className={styles.cardBody}>
+                  <p className={styles.category}>{post.category}</p>
+                  <h2>
+                    <Link to={`/guide/${post.slug}`}>{post.title}</Link>
+                  </h2>
+                  <p>{post.description}</p>
+                  <footer className={styles.meta}>
+                    <time dateTime={post.date}>{post.date}</time>
+                    <span>{post.readTime}</span>
+                    <span>{post.sections.length} sections</span>
+                  </footer>
+                  <Link to={`/guide/${post.slug}`} className={styles.readMore}>Read full guide</Link>
+                </div>
               </article>
             ))}
           </section>

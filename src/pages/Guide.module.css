@@ -42,7 +42,36 @@
 }
 
 .card {
-  padding: 28px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImageLink {
+  display: block;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.cardImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--bg-secondary);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.03);
+}
+
+.cardBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px 28px 28px;
 }
 
 .card h2 {
@@ -84,9 +113,38 @@
   margin-top: 24px;
 }
 
+.readMore {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 20px;
+  color: var(--neon-blue);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.readMore:hover {
+  color: var(--neon-cyan);
+}
+
 .articleMeta {
   justify-content: center;
   margin-top: 22px;
+}
+
+.articleImage {
+  display: block;
+  width: min(100%, 860px);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: 34px auto 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-card);
 }
 
 .breadcrumb {
@@ -111,6 +169,7 @@
 
 .content section {
   margin-bottom: 38px;
+  scroll-margin-top: calc(var(--nav-height) + 24px);
 }
 
 .content h2,
@@ -143,6 +202,29 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.toc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 26px;
+  padding-left: 18px;
+}
+
+.toc li {
+  padding-left: 4px;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.toc a {
+  color: var(--text-secondary);
+}
+
+.relatedTitle {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .sidebar li {

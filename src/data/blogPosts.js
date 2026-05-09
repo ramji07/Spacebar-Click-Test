@@ -7,6 +7,8 @@ export const blogPosts = [
     category: 'Spacebar Training',
     date: '2026-05-09',
     readTime: '7 min read',
+    image: '/blog/spacebar-speed.svg',
+    imageAlt: 'Illustration of a glowing spacebar used for speed training',
     intro: 'Improving spacebar speed is not only about smashing the key harder. Fast, repeatable pressing comes from a mix of relaxed posture, efficient finger movement, clean rhythm, and short practice sessions that help your hand learn the motion without unnecessary strain.',
     sections: [
       {
@@ -44,6 +46,69 @@ export const blogPosts = [
           'The healthiest training plan is brief and consistent. Five minutes a day is usually enough. Warm up with slow presses, run a few timed tests, and stop before your hand gets tired. Fast spacebar speed should feel controlled, not frantic.'
         ],
       },
+      {
+        heading: 'Choose the right time limit for each goal',
+        paragraphs: [
+          'Different test lengths train different parts of your technique. A one-second test is useful when you want to measure pure burst speed, but it is not always the best sign of real control. A five-second test reveals whether your first burst can continue for more than a moment. A ten-second test is usually the best everyday benchmark because it balances speed, rhythm, and comfort.',
+          'Longer tests, such as thirty or sixty seconds, should be used less often. They are helpful for endurance, but they can also tempt you to press through fatigue. If your score drops sharply after the first ten seconds, treat that as useful feedback. It means you should work on relaxation and repeatable motion before trying to force a higher long-duration score.'
+        ],
+      },
+      {
+        heading: 'Warm up before chasing a personal best',
+        paragraphs: [
+          'A short warm-up can make your score more consistent. Start with ten slow spacebar presses while focusing on clean press and release. Then run one easy five-second test at about seventy percent effort. This tells your hand what motion to use without immediately creating tension. After that, you can run a few serious attempts.',
+          'Avoid starting every session with maximum effort. Cold muscles and rushed movements often lead to stiff pressing, missed rhythm, and lower scores. Warming up also helps you notice how your hand feels that day. If your thumb or wrist feels tight during the warm-up, lower the intensity and make the session a technique practice instead of a record attempt.'
+        ],
+      },
+      {
+        heading: 'Compare best score and average score',
+        paragraphs: [
+          'Your best score is exciting, but your average score is usually more useful. A single high result can happen because you started perfectly, hit a lucky rhythm, or used a shorter test window. Your average shows what you can repeat. When your average rises, your technique is genuinely improving.',
+          'A simple tracking method is to run five attempts at the same time limit and write down the middle three scores. Ignore the highest and lowest. This removes the lucky run and the obvious mistake, giving you a clearer picture of your current level. Repeat the same method once or twice per week instead of testing endlessly in one sitting.'
+        ],
+      },
+      {
+        heading: 'Reduce wasted movement',
+        paragraphs: [
+          'Many people lose speed because the thumb travels farther than needed. The spacebar only has to move far enough to register, then return. If you press too hard or lift your thumb too high between hits, every cycle takes extra time. Focus on a short, controlled motion that stays close to the key.',
+          'One helpful drill is to press slowly while watching the key movement. Notice the point where the key actuates and how far it returns. Then gradually increase speed while keeping the same small range of motion. This kind of practice may feel less dramatic than smashing the key, but it often creates faster and cleaner results.'
+        ],
+      },
+      {
+        heading: 'Know when to rest',
+        paragraphs: [
+          'Spacebar training should not cause pain. Mild tiredness after a few attempts is normal, but sharp pain, numbness, tingling, or soreness that lasts after practice is a sign to stop. Speed improves through repeated clean motion, not through forcing your hand past discomfort.',
+          'Rest is also part of progress. If you test for twenty minutes straight, your later scores may fall because your hand is tired, not because your technique is worse. Short sessions make it easier to leave practice with good movement patterns. That matters because your hand tends to remember the motions you repeat most often.'
+        ],
+      },
+      {
+        heading: 'Turn practice into a weekly routine',
+        paragraphs: [
+          'A balanced weekly plan might include three short sessions. On day one, focus on one-second and five-second bursts. On day two, use ten-second tests and track your average. On day three, run a few longer attempts only if your hand feels fresh. Each session can be five to eight minutes long.',
+          'Keep notes simple. Record the date, keyboard, time limit, best score, average score, and one technique note such as relaxed wrist, lighter press, or better rhythm. Over time, these notes show what actually helps. They also stop you from changing too many variables at once, which makes progress easier to understand.'
+        ],
+      },
+      {
+        heading: 'Use your non-dominant hand carefully',
+        paragraphs: [
+          'Some users try the non-dominant hand because they want to compare both thumbs or reduce fatigue. This can be useful, but start slowly. The non-dominant thumb may not have the same coordination, and forcing it to match your main hand immediately can create awkward movement.',
+          'Run short tests only, then compare comfort instead of only score. If the non-dominant hand feels smoother on a specific keyboard angle, that may reveal a setup improvement you can use with your dominant hand too. The goal is to learn from the comparison, not to turn every hand position into a contest.'
+        ],
+      },
+      {
+        heading: 'Practice on the keyboard you actually use',
+        paragraphs: [
+          'Training on one keyboard and playing or working on another can create confusing results. A desktop mechanical keyboard may have a different spacebar weight than a laptop keyboard. If your goal is better performance on a specific device, do most of your practice on that device.',
+          'It is still fine to test other keyboards for comparison. Just label your scores clearly. A higher score on a lighter keyboard does not automatically mean your technique improved. It may simply mean the hardware helped. Consistent practice conditions make your progress easier to trust.'
+        ],
+      },
+      {
+        heading: 'Use the score as feedback, not pressure',
+        paragraphs: [
+          'The best mindset is curious rather than desperate. If one attempt is lower than expected, look for a reason. Maybe you started tense, pressed too hard, or lost rhythm after the first few seconds. Each result is a clue that can improve the next session.',
+          'Pressure often makes people grip the desk, stiffen the shoulder, or attack the spacebar harder than needed. That usually lowers speed over time. Treat the test like a training mirror. It shows what happened, but your job is to make the next motion cleaner and more repeatable.'
+        ],
+      },
     ],
   },
   {
@@ -54,6 +119,8 @@ export const blogPosts = [
     category: 'Tool Guide',
     date: '2026-05-09',
     readTime: '6 min read',
+    image: '/blog/spacebar-click-test.svg',
+    imageAlt: 'Illustration of a browser spacebar click test with CPS stats',
     intro: 'A spacebar click test is a simple browser tool that counts how many times you press the spacebar within a selected time limit. It turns a basic keyboard action into useful feedback by showing total hits, clicks per second, time left, and often your best saved score.',
     sections: [
       {
@@ -91,6 +158,69 @@ export const blogPosts = [
           'The best results come from repeatable technique. A good score is fast, comfortable, and consistent. When those three things improve together, your spacebar speed is moving in the right direction.'
         ],
       },
+      {
+        heading: 'What happens when you press the spacebar',
+        paragraphs: [
+          'When you press the spacebar, your keyboard sends an input signal to the computer. The browser receives that signal as a keyboard event, and the test adds one hit to your count. This happens very quickly, but the full path still depends on the keyboard switch, USB or wireless connection, operating system, browser focus, and the page code.',
+          'A good spacebar click test should count deliberate presses instead of counting a held key as many automatic repeats. That is why clean press-and-release motion matters. If you hold the key down, your operating system may generate repeat events, but those repeats do not represent real tapping speed. The best score is based on actual physical presses.'
+        ],
+      },
+      {
+        heading: 'Why the same person can get different scores',
+        paragraphs: [
+          'It is normal for your score to move around from one attempt to another. Small changes in posture, keyboard angle, hand warmth, focus, and time limit can affect the result. A one-second test may change dramatically because one missed press has a large effect. A ten-second test is usually more stable because it gives your rhythm time to settle.',
+          'Hardware also matters. A laptop spacebar, a membrane keyboard, and a mechanical keyboard can all feel different. Some spacebars require more force. Some return faster. Some wobble when hit near the edge. When comparing scores, use the same device and the same time limit if you want the comparison to be fair.'
+        ],
+      },
+      {
+        heading: 'Understanding CPS, total hits, and best score',
+        paragraphs: [
+          'CPS is the main speed number because it normalizes the result across different durations. Total hits simply tells you how many presses happened during one test. If two tests use different time limits, total hits alone can be misleading. A sixty-hit score in ten seconds is faster than a sixty-hit score in thirty seconds, even though the total is the same.',
+          'Best score is useful for motivation, but it should not be the only number you watch. A saved best score can show your peak ability, while your recent average shows your current reliable performance. If your best score is far above your average, your next goal should be consistency. If both rise together, your technique and control are improving.'
+        ],
+      },
+      {
+        heading: 'Common mistakes during testing',
+        paragraphs: [
+          'One common mistake is pressing with too much force. Extra force does not make the browser count faster; it only makes your thumb work harder. Another mistake is changing technique in the middle of a run. If you start with one thumb, switch to two thumbs, and then change position again, the rhythm breaks and the score becomes harder to interpret.',
+          'Users also forget browser focus. If the page is not focused, the first press may scroll the page or do nothing. Click or tap the test area before starting, then keep your attention on the timer and rhythm. For mobile testing, tap the intended press area rather than relying on the physical keyboard behavior of a connected device.'
+        ],
+      },
+      {
+        heading: 'How accurate are online tests',
+        paragraphs: [
+          'Online tests are accurate enough for everyday training, comparison, and keyboard checks when they are built correctly. They run directly in the browser and can update counts instantly. However, they are not laboratory instruments. Browser scheduling, device performance, and input hardware can create tiny differences between attempts.',
+          'The practical answer is to use the same test repeatedly under similar conditions. That gives you a reliable personal benchmark. Even if two websites calculate slightly differently, your trend on one consistent tool is valuable. If your average CPS improves over several sessions, that improvement is meaningful for your own practice.'
+        ],
+      },
+      {
+        heading: 'Best way to start as a beginner',
+        paragraphs: [
+          'If you are new to spacebar testing, start with a ten-second test and run three attempts. Do not worry about comparing yourself to advanced users yet. Notice whether your thumb stays relaxed, whether the score drops near the end, and whether every press feels controlled. This gives you a baseline without turning the first session into a strain.',
+          'After the baseline, choose one goal for the next week. You might try to improve your average by 0.3 CPS, keep the same score with less tension, or make your five attempts more consistent. Small goals work better than chasing a huge jump. The test is most helpful when it turns practice into clear feedback.'
+        ],
+      },
+      {
+        heading: 'How to read score changes over time',
+        paragraphs: [
+          'A score can move up or down for reasons that have nothing to do with long-term skill. Sleep, stress, hand temperature, and even desk height can affect results. That is why one bad attempt should not be treated as a setback. Look for patterns across several sessions instead.',
+          'If your average score rises over two or three weeks, your technique is probably improving. If your best score rises but your average stays flat, you may be getting occasional bursts without consistent control. If both numbers fall while your hand feels tired, you may need more rest rather than more practice.'
+        ],
+      },
+      {
+        heading: 'Why clean release matters',
+        paragraphs: [
+          'Many users focus only on pressing down, but release is half of every repetition. The key must return before the next clean press can happen. If you keep too much weight on the spacebar, the return may be slower or incomplete, which breaks rhythm and can cause missed inputs.',
+          'Practice listening and feeling for the press-release cycle. A good rhythm has a light bounce rather than a heavy stomp. When the release is clean, the next press starts from a better position. This is one reason relaxed users often beat tense users even when they appear to move less aggressively.'
+        ],
+      },
+      {
+        heading: 'When scores are useful outside gaming',
+        paragraphs: [
+          'A spacebar click test is not only for games. It can also reveal keyboard responsiveness, comfort issues, or changes after cleaning a keyboard. If your score suddenly drops on the same device, the spacebar may feel sticky, unstable, or slower to return than before.',
+          'Writers, developers, and students can use the test as a quick keyboard feel check. You do not need a high score for normal typing, but a smooth spacebar matters because it is one of the most-used keys. A comfortable spacebar can make long sessions feel easier.'
+        ],
+      },
     ],
   },
   {
@@ -101,6 +231,8 @@ export const blogPosts = [
     category: 'CPS Training',
     date: '2026-05-09',
     readTime: '7 min read',
+    image: '/blog/cps-gamers.svg',
+    imageAlt: 'Illustration of a gaming mouse for CPS test practice',
     intro: 'A CPS test measures how many mouse clicks you can perform each second. Gamers use it to understand raw clicking speed, but the best players know that useful speed must stay accurate, comfortable, and repeatable during real gameplay.',
     sections: [
       {
@@ -138,6 +270,76 @@ export const blogPosts = [
           'Track best CPS and average CPS separately. Best CPS shows peak ability. Average CPS shows dependable performance. For gaming, dependable performance is usually more valuable.'
         ],
       },
+      {
+        heading: 'Match your CPS goal to the game',
+        paragraphs: [
+          'Not every game rewards the same kind of clicking. Some games benefit from short bursts, while others require steady timing over longer fights. A high one-second CPS score may look impressive, but it might not help if the game needs controlled aim, movement, and decision-making at the same time. Your training should match the action you actually perform in-game.',
+          'For games that require repeated attacks, practice short controlled bursts. For games that require building, switching, or timing abilities, focus on clean clicks with low cursor movement. If a game has cooldowns or rhythm-based windows, clicking faster than the game can accept may not help. The best CPS is the fastest speed you can use without losing control.'
+        ],
+      },
+      {
+        heading: 'Keep your pointer steady',
+        paragraphs: [
+          'A CPS test can hide a problem that appears in real games: cursor shake. If your hand tenses while clicking, the pointer may move away from the target. This is especially common when players chase maximum speed by lifting the finger too high or pressing the mouse with the whole hand.',
+          'Practice one round where you click as fast as possible, then one round where you keep the cursor inside a small area. If your controlled score is much lower, that is your useful gaming benchmark. Over time, try to raise the controlled score rather than only chasing the highest raw number. Accuracy and speed should grow together.'
+        ],
+      },
+      {
+        heading: 'Understand clicking styles',
+        paragraphs: [
+          'Basic clicking uses one finger and a normal press-and-release motion. It is the safest and most transferable style for most players. Some players experiment with butterfly clicking, jitter clicking, or drag clicking, but those methods depend heavily on hardware, game rules, and personal comfort. They can also create strain if practiced too aggressively.',
+          'Before using advanced methods, check whether your game allows them and whether your mouse can handle them. Some servers or games may treat very high or unusual click patterns suspiciously. Even when a method is allowed, it is not automatically better. A slightly lower normal-clicking CPS with stable aim often beats a higher score that makes movement messy.'
+        ],
+      },
+      {
+        heading: 'Use rest periods like part of the drill',
+        paragraphs: [
+          'Rest periods are not wasted time. They keep your hand fresh enough to repeat good technique. After a hard five-second or ten-second attempt, rest for at least fifteen seconds. Shake out the hand lightly, loosen your grip, and check whether your shoulder or forearm has started to tense.',
+          'If you skip rest, you may train fatigue instead of speed. Your score may drop, your clicks may become uneven, and your hand may learn a stiff pattern. Short, high-quality attempts are better than a long session full of rushed clicking. For most players, five minutes of focused CPS practice is plenty.'
+        ],
+      },
+      {
+        heading: 'Set up your mouse and desk',
+        paragraphs: [
+          'Your mouse should sit where your forearm can rest naturally. If the mouse is too far away, you may reach forward and tense the shoulder. If it is too close, your wrist may bend sharply. A neutral position makes it easier to click quickly without dragging the pointer around.',
+          'Mouse weight, switch feel, and surface friction can also change your score. A very heavy mouse may feel stable but harder to click rapidly. A very light mouse may move during fast clicks. Use your CPS score together with comfort and control. The best setup is the one that lets you click, aim, and recover without fighting your hardware.'
+        ],
+      },
+      {
+        heading: 'Build a score log that matters',
+        paragraphs: [
+          'A useful CPS log should include the test length, grip style, mouse used, best score, average score, and a note about control. For gamers, add one more note: whether the pointer stayed steady. This stops the log from becoming a simple contest of bigger numbers and makes it a real training tool.',
+          'Review the log weekly, not after every attempt. Day-to-day variation is normal, especially if you are tired or using a different setup. Weekly review shows the bigger trend. If your average score improves and your control note stays positive, your practice is working. If speed rises but control falls, slow down and rebuild clean movement.'
+        ],
+      },
+      {
+        heading: 'Practice clicking after warm-up gameplay',
+        paragraphs: [
+          'CPS tests can feel different before and after you play. Before a session, your hand may be cold and your timing may feel stiff. After a few minutes of normal gameplay, your grip and finger motion may be more natural. Testing both moments can teach you when your hand performs best.',
+          'Do not use this as an excuse to overtest. A quick warm-up, two controlled attempts, and one best-effort attempt are enough. If your post-warm-up score is higher and still controlled, use a similar warm-up before competitive play. If it is lower, your gameplay may already be creating tension.'
+        ],
+      },
+      {
+        heading: 'Do not ignore mouse switch feel',
+        paragraphs: [
+          'Mouse switches vary a lot. Some require a crisp, firm press. Others activate with lighter pressure. A switch that feels good for aiming may not produce the highest CPS, and a switch that produces high CPS may feel less stable for precise shots.',
+          'Use the test to understand the tradeoff. If a mouse gives you a high score but makes the pointer shake, it may not be the best gaming choice. If another mouse gives a slightly lower score but better control, that may be the stronger option for real matches.'
+        ],
+      },
+      {
+        heading: 'Train both speed and recovery',
+        paragraphs: [
+          'In games, clicking fast is only one part of the action. You also need to recover after a burst, move the mouse, aim again, and make the next decision. A training routine that only measures maximum CPS can miss this recovery phase.',
+          'Try alternating five seconds of fast clicking with ten seconds of relaxed aiming or normal mouse movement. This teaches your hand to return to control after speed. It also makes practice closer to real gameplay, where you rarely click at maximum speed forever.'
+        ],
+      },
+      {
+        heading: 'Keep practice rules simple',
+        paragraphs: [
+          'Simple rules make CPS practice easier to repeat. Use the same test length, the same mouse, the same grip, and the same rest period for a week at a time. When the setup stays consistent, score changes become easier to understand.',
+          'Change only one thing when you experiment. If you change grip, mouse position, and test length together, you will not know what helped. Good practice is boring in the best way: clear, repeatable, and easy to compare.'
+        ],
+      },
     ],
   },
   {
@@ -148,6 +350,8 @@ export const blogPosts = [
     category: 'Keyboard Testing',
     date: '2026-05-09',
     readTime: '6 min read',
+    image: '/blog/keyboard-test.svg',
+    imageAlt: 'Illustration of an online keyboard test with highlighted keys',
     intro: 'A keyboard test helps you confirm that every key on your keyboard is sending input correctly. It is useful after buying a keyboard, cleaning it, spilling something near it, or noticing missed keystrokes while typing or gaming.',
     sections: [
       {
@@ -185,6 +389,76 @@ export const blogPosts = [
           'A keyboard test is simple, but it saves time. It gives you direct evidence before you replace hardware, reinstall software, or blame your typing technique.'
         ],
       },
+      {
+        heading: 'Test the keys you rely on most',
+        paragraphs: [
+          'A full keyboard check is useful, but you should pay extra attention to the keys you use every day. For gamers, that usually means WASD, Space, Shift, Ctrl, number keys, and common ability keys. For writers and developers, it may mean letters, punctuation, Backspace, Enter, Tab, arrow keys, and shortcut modifiers.',
+          'Press each important key several times with normal force. A key can appear fine once and then miss on the third or fourth press. If a key only fails when pressed from one side, the switch, keycap, or stabilizer may be uneven. This is especially important for wide keys such as Space, Shift, Enter, and Backspace.'
+        ],
+      },
+      {
+        heading: 'Check key combinations and shortcuts',
+        paragraphs: [
+          'Some keyboard problems only appear when keys are pressed together. A single key may work alone but fail inside a shortcut. Test combinations such as Ctrl+C, Ctrl+V, Alt+Tab, Shift plus letters, and any game-specific movement combinations. Watch whether every key in the combination registers correctly.',
+          'Combination testing is also useful for detecting rollover limits. Rollover describes how many simultaneous keys a keyboard can report. Many modern keyboards handle common combinations well, but cheaper or older keyboards may block certain key groups. If a game input fails only when several keys are held, rollover may be the reason.'
+        ],
+      },
+      {
+        heading: 'Identify chatter and double input',
+        paragraphs: [
+          'Keyboard chatter happens when one physical press creates two or more inputs. It can make words contain duplicate letters, cause accidental jumps, or trigger shortcuts twice. A browser keyboard test can help reveal chatter by showing repeated activations when you press only once.',
+          'To test for chatter, press the suspicious key slowly twenty or thirty times. Use the same pressure each time and watch the output. If extra inputs appear, clean the key area and test again. Mechanical switches can sometimes chatter because of dust, wear, or contact issues. Laptop keyboards may need more careful service because the mechanisms are thinner.'
+        ],
+      },
+      {
+        heading: 'Understand stuck keys',
+        paragraphs: [
+          'A stuck key may continue sending input after you release it, or it may physically stay lower than nearby keys. In a keyboard test, this can look like a key that remains highlighted. Stuck behavior can come from debris, liquid residue, a damaged switch, or a keycap that is not seated correctly.',
+          'If a key seems stuck, stop pressing it hard. Extra force can make damage worse. Gently inspect the key, remove obvious debris, and test again. For external keyboards, disconnecting and reconnecting can help separate hardware behavior from a software state. If the same key stays stuck on another device, the keyboard itself is likely the source.'
+        ],
+      },
+      {
+        heading: 'Separate hardware issues from software issues',
+        paragraphs: [
+          'When a key fails, test it in more than one place. Try the online keyboard test, a text editor, and if possible another browser. If the same problem appears everywhere, hardware is more likely. If it appears only in one app or one website, software settings or browser focus may be involved.',
+          'Also check operating system features such as Sticky Keys, Filter Keys, keyboard layout settings, and language input modes. These settings can make normal keys behave strangely. For external keyboards, try another USB port or cable. For wireless keyboards, check battery level and connection quality before assuming the keyboard is broken.'
+        ],
+      },
+      {
+        heading: 'Create a quick maintenance routine',
+        paragraphs: [
+          'Regular maintenance prevents many keyboard issues. Keep drinks away from the keyboard, remove dust with gentle air or a soft brush, and wipe keycaps with a lightly damp cloth when needed. Avoid soaking the keyboard or using harsh cleaners, especially on laptop keyboards.',
+          'After cleaning, run a quick keyboard test. Press the keys you removed or cleaned, then test the most important shortcuts. This confirms that every keycap is seated correctly and that no key became sticky during cleaning. A two-minute check can prevent a frustrating surprise during work or gaming.'
+        ],
+      },
+      {
+        heading: 'Use testing after spills or travel',
+        paragraphs: [
+          'Spills and travel are two moments when keyboard problems often appear. Liquid can leave residue that makes a key sticky after it dries. Travel can loosen keycaps, shift debris, or expose a keyboard to pressure inside a bag. A quick test after either event is worth the minute it takes.',
+          'Focus on wide keys and modifiers first because they are easy to notice during normal use but frustrating when they fail. Test Space, Enter, Shift, Ctrl, Alt, and Backspace several times. Then check the letters and numbers. If anything feels different, address it before relying on the keyboard for important work.'
+        ],
+      },
+      {
+        heading: 'Document problems before repair',
+        paragraphs: [
+          'If you plan to contact support or repair a keyboard, document the problem clearly. Write down which key fails, how often it fails, whether it happens on another device, and whether cleaning changed anything. This makes support conversations faster and more useful.',
+          'A keyboard test gives you evidence. Instead of saying the keyboard feels weird, you can say the left Shift key misses about one in ten presses or the E key double-registers during slow testing. Specific details help separate user error, software settings, and hardware failure.'
+        ],
+      },
+      {
+        heading: 'Know the limits of browser testing',
+        paragraphs: [
+          'A browser keyboard test is excellent for quick diagnosis, but it cannot see every electrical detail inside the keyboard. It tells you what input reaches the browser. That is usually enough for everyday troubleshooting, but severe hardware diagnosis may require manufacturer tools or professional repair.',
+          'Use the browser test as the first step. If the problem is obvious there, you have a strong clue. If the browser test looks normal but a specific app still has trouble, check that app settings next. Good troubleshooting moves from simple evidence to more specific tests.'
+        ],
+      },
+      {
+        heading: 'Retest after every fix',
+        paragraphs: [
+          'After cleaning, reconnecting, changing settings, or replacing a cable, run the same keyboard test again. Retesting confirms whether the fix actually changed the behavior. It also prevents you from assuming a problem is solved just because the key feels better once.',
+          'Use the same method each time: press the key slowly, test combinations if needed, and note whether the issue appears again. Consistent retesting turns troubleshooting into evidence instead of guesswork. If the problem returns after a short period of normal use, write that down too because intermittent faults are easier to explain with a clear timeline.'
+        ],
+      },
     ],
   },
   {
@@ -195,6 +469,8 @@ export const blogPosts = [
     category: 'Comparison Guide',
     date: '2026-05-09',
     readTime: '7 min read',
+    image: '/blog/spacebar-vs-cps.svg',
+    imageAlt: 'Illustration comparing spacebar CPS and mouse CPS scores',
     intro: 'Spacebar tests and CPS tests both measure repeated input speed, but they are not the same benchmark. One focuses on keyboard pressing, while the other focuses on mouse clicking. Knowing the difference helps you track the score that actually matches your goal.',
     sections: [
       {
@@ -230,6 +506,76 @@ export const blogPosts = [
         paragraphs: [
           'For general speed practice, run one spacebar test and one CPS test a few times per week. Record best score, average score, and comfort. If either test causes tension, lower the intensity and focus on smoother movement.',
           'The right score is the one that supports your real goal. Spacebar speed helps keyboard actions. CPS helps mouse actions. Together, they give a fuller picture of input speed and control.'
+        ],
+      },
+      {
+        heading: 'Compare the movement, not just the number',
+        paragraphs: [
+          'Spacebar speed and mouse CPS look similar because both are measured as actions per second, but the body movement is different. Spacebar tests usually rely on the thumb and a larger key. CPS tests usually rely on the index or middle finger and a smaller mouse switch. The muscles, travel distance, and stability demands are not the same.',
+          'That is why a person can be strong in one test and average in the other. A fast mouse clicker may have excellent finger speed but a slower thumb. A fast spacebar user may have great keyboard rhythm but less mouse control. Treat each score as a separate skill instead of expecting them to match perfectly.'
+        ],
+      },
+      {
+        heading: 'Use spacebar scores for keyboard-heavy games',
+        paragraphs: [
+          'Spacebar scores are most useful when your game or task depends on repeated keyboard actions. Platform games, rhythm games, browser games, and some movement-heavy titles can all benefit from cleaner spacebar timing. The score can also help you understand whether your keyboard spacebar feels responsive enough for fast input.',
+          'For gaming, do not only chase the highest short burst. Practice the time window that resembles the game. If the game needs repeated jumps over ten seconds, a one-second record is not the main benchmark. A slightly lower but repeatable ten-second score may be more useful for real gameplay.'
+        ],
+      },
+      {
+        heading: 'Use CPS scores for mouse-heavy actions',
+        paragraphs: [
+          'CPS scores are most useful when repeated mouse clicks matter. This can include attack timing, resource gathering, rapid selection, or any game mechanic that accepts frequent clicks. The score tells you how fast your clicking finger can repeat the motion, but it does not automatically measure accuracy.',
+          'A good CPS practice session should include a control check. If your pointer moves too much while clicking, your usable gaming CPS is lower than your raw test score. For mouse-heavy games, stable aim and timing matter as much as speed. The best CPS score is the one you can use while still pointing where you intend.'
+        ],
+      },
+      {
+        heading: 'Avoid unfair comparisons',
+        paragraphs: [
+          'Comparing a spacebar score to a CPS score can be misleading if the test settings are different. A five-second spacebar test and a one-second mouse test measure different demands. Different devices also change the result. A mechanical keyboard, laptop keyboard, gaming mouse, and office mouse can all affect speed immediately.',
+          'If you want a fair personal comparison, use the same duration for both tests and record the device used. Even then, remember that the skills are separate. The goal is not to prove one number is better. The goal is to understand where you are fast, where you are controlled, and where practice would help.'
+        ],
+      },
+      {
+        heading: 'Build a combined input routine',
+        paragraphs: [
+          'A combined routine can be short. Start with two five-second spacebar tests, rest, then run two five-second CPS tests. After that, run one ten-second attempt for whichever input matters more to your goal. Finish by writing down best score, average score, and comfort for both inputs.',
+          'This routine gives you broad input feedback without overtraining. It also helps you notice patterns. Maybe your spacebar score improves quickly while CPS stays flat. Maybe your mouse score is high but control feels poor. The pattern tells you what to practice next and keeps training practical.'
+        ],
+      },
+      {
+        heading: 'Pick the benchmark that matches your purpose',
+        paragraphs: [
+          'If your goal is better keyboard movement, track spacebar CPS. If your goal is faster mouse clicking, track mouse CPS. If your goal is general input speed, track both but keep them separate. A single number cannot describe every kind of speed because each input uses different hardware and movement.',
+          'The best benchmark is the one that changes your decisions. If a score helps you choose a better technique, adjust your setup, or practice more safely, it is useful. If it only makes you chase a bigger number without improving control, it is less useful. Measure the skill that supports the result you actually want.'
+        ],
+      },
+      {
+        heading: 'Use both tests to find weak links',
+        paragraphs: [
+          'Running both tests can show where your input speed is strongest. If your mouse CPS is high but spacebar CPS is low, thumb movement or keyboard feel may be the weak link. If your spacebar score is high but mouse CPS is low, finger speed, grip, or mouse switch feel may need attention.',
+          'This comparison is most useful when it leads to a specific action. You might adjust keyboard angle, try a lighter mouse grip, or practice shorter bursts. The goal is not to make the two scores identical. The goal is to understand which input deserves practice for your actual tasks.'
+        ],
+      },
+      {
+        heading: 'Think about fatigue differently',
+        paragraphs: [
+          'Spacebar fatigue and mouse-click fatigue can feel different. Spacebar fatigue may show up in the thumb, wrist, or forearm. Mouse-click fatigue may show up in the index finger, knuckle, or top of the hand. Because the stress points differ, improvement plans should differ too.',
+          'If one test causes discomfort faster than the other, reduce that test first. Do fewer attempts, lower the intensity, and focus on smoother movement. Balanced training is not about doing equal volume for every input. It is about giving each movement enough practice without creating strain.'
+        ],
+      },
+      {
+        heading: 'Make the benchmark part of a bigger skill',
+        paragraphs: [
+          'Neither score exists in isolation. A spacebar score supports movement, rhythm, and keyboard responsiveness. A CPS score supports clicking, aiming, and repeated mouse actions. In real use, these skills combine with timing, focus, and decision-making.',
+          'Use benchmark tests at the beginning or end of practice, then spend most of your time on the real activity. If your goal is a game, practice the game. If your goal is keyboard comfort, type and test the keys you use. Benchmarks are most powerful when they guide practice instead of replacing it.'
+        ],
+      },
+      {
+        heading: 'Review scores monthly',
+        paragraphs: [
+          'Weekly scores can move around, but monthly review shows the larger trend. Look at your average spacebar score, average mouse CPS, comfort notes, and the devices used. This helps you see whether practice is working or whether hardware changes affected the numbers.',
+          'A monthly review also keeps the tests healthy. If scores rise while comfort stays good, continue. If scores rise but discomfort appears, reduce intensity. The best benchmark is one you can keep using without turning speed practice into strain, and the notes make that decision much easier for future practice sessions and long-term progress overall too.'
         ],
       },
     ],

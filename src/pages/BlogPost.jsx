@@ -10,6 +10,7 @@ export default function BlogPost() {
   if (!post) return <Navigate to="/guide" replace />
 
   const relatedPosts = blogPosts.filter(item => item.slug !== post.slug).slice(0, 3)
+  const sectionId = (heading) => heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
   const canonical = `https://spacebarclicktest.net/guide/${post.slug}`
   const schema = {
     '@context': 'https://schema.org',
@@ -30,6 +31,7 @@ export default function BlogPost() {
       name: 'SpacebarClickTest.net',
       url: 'https://spacebarclicktest.net/',
     },
+    image: `https://spacebarclicktest.net${post.image}`,
   }
 
   return (
@@ -61,12 +63,22 @@ export default function BlogPost() {
                 <time dateTime={post.date}>Updated {post.date}</time>
                 <span>{post.readTime}</span>
               </div>
+              <img
+                className={styles.articleImage}
+                src={post.image}
+                alt={post.imageAlt}
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                width="960"
+                height="540"
+              />
             </header>
 
             <div className={styles.layout}>
               <div className={styles.content}>
                 {post.sections.map(section => (
-                  <section key={section.heading}>
+                  <section key={section.heading} id={sectionId(section.heading)}>
                     <h2>{section.heading}</h2>
                     {section.paragraphs.map(paragraph => (
                       <p key={paragraph}>{paragraph}</p>
@@ -75,8 +87,17 @@ export default function BlogPost() {
                 ))}
               </div>
 
-              <aside className={styles.sidebar} aria-label="Related guides">
-                <h2>Related Guides</h2>
+              <aside className={styles.sidebar} aria-label="Article navigation">
+                <h2>In This Guide</h2>
+                <ol className={styles.toc}>
+                  {post.sections.map(section => (
+                    <li key={section.heading}>
+                      <a href={`#${sectionId(section.heading)}`}>{section.heading}</a>
+                    </li>
+                  ))}
+                </ol>
+
+                <h2 className={styles.relatedTitle}>Related Guides</h2>
                 <ul>
                   {relatedPosts.map(item => (
                     <li key={item.slug}>

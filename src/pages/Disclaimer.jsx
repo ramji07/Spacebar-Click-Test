@@ -2,40 +2,42 @@ import { Link } from 'react-router-dom'
 import SEO from '../components/SEO/SEO'
 import styles from './StaticPage.module.css'
 
+const BUSINESS_EMAIL = 'Anmolchaurasiya406@gmail.com'
+
 export default function Disclaimer() {
   return (
     <>
       <SEO
         title="Disclaimer | SpacebarClickTest.net"
-        description="Disclaimer for SpacebarClickTest.net. Information about accuracy, limitations, and appropriate use of our spacebar speed testing tool."
+        description="Read the SpacebarClickTest.net disclaimer about result accuracy, professional advice, third-party content, and safe use."
         canonical="https://spacebarclicktest.net/disclaimer"
       />
       <main className={styles.page}>
         <div className="container">
           <article className={styles.article}>
             <h1><span className="gradient-text">Disclaimer</span></h1>
-            <p className={styles.lead}>Last updated: January 1, 2025. Please read this disclaimer carefully before relying on results from SpacebarClickTest.net.</p>
+            <p className={styles.lead}>Last updated: May 9, 2026. This disclaimer explains the limitations of our tools, guides, and website content.</p>
 
             <h2>General Disclaimer</h2>
-            <p>The information and tools provided on SpacebarClickTest.net are for entertainment and general informational purposes only. Nothing on this website should be construed as professional advice of any kind.</p>
+            <p>SpacebarClickTest.net provides browser-based tools and educational content for general informational and entertainment purposes. The site is maintained by Anmol Chaurasiya, a full-stack developer, but the content is not professional medical, legal, ergonomic, or occupational advice.</p>
 
             <h2>Accuracy of Results</h2>
-            <p>Spacebar speed and CPS measurements are based on browser event timing, which may vary depending on browser version, operating system, keyboard hardware, system load, and other environmental factors. Results are approximations and should not be used for any professional, medical, or competitive certification purposes without independent verification.</p>
+            <p>Spacebar speed and CPS measurements are based on browser event timing. Results can vary depending on keyboard hardware, mouse hardware, browser version, operating system, device performance, system load, and test conditions. Use scores as helpful estimates, not official certification.</p>
 
-            <h2>No Professional Advice</h2>
-            <p>SpacebarClickTest.net does not provide medical, ergonomic, or occupational health advice. If you experience pain, discomfort, or repetitive strain symptoms while using keyboards or this tool, please consult a qualified healthcare professional.</p>
+            <h2>No Medical or Ergonomic Advice</h2>
+            <p>If you experience pain, numbness, discomfort, or repetitive strain symptoms while using a keyboard, mouse, or this website, stop the activity and consult a qualified healthcare professional. Our guides encourage safe practice, but they do not replace professional advice.</p>
 
-            <h2>Third-Party Content</h2>
-            <p>Our site may display advertisements and links to third-party websites. SpacebarClickTest.net is not responsible for the content, accuracy, or practices of any third-party sites. Inclusion of any link does not constitute endorsement.</p>
+            <h2>Developer and Editorial Experience</h2>
+            <p>Our explanations are informed by web development knowledge of browser input events, frontend performance, local storage, and user interface behavior. We aim to make technical limitations clear so users understand what the tools can and cannot measure.</p>
 
-            <h2>Fair Use</h2>
-            <p>All content on SpacebarClickTest.net is created for educational and informational purposes. Any references to external tools, brands, or products are for comparative reference only and do not imply affiliation or endorsement.</p>
+            <h2>Third-Party Content and Ads</h2>
+            <p>The website may display advertisements or links to third-party websites. SpacebarClickTest.net is not responsible for third-party content, claims, privacy practices, or offers. A link or ad does not mean we endorse that website or product.</p>
 
-            <h2>Changes</h2>
-            <p>This disclaimer may be updated at any time without prior notice. Continued use of the site following updates constitutes acceptance of the revised disclaimer.</p>
+            <h2>Corrections and Updates</h2>
+            <p>We review correction requests and may update pages when information becomes clearer or tool behavior changes. To report an issue, email <a href={`mailto:${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</a> or use the <Link to="/contact">Contact page</Link>.</p>
 
             <h2>Contact</h2>
-            <p>For questions regarding this disclaimer, please use our <Link to="/contact">Contact page</Link>.</p>
+            <p>For questions about this disclaimer, contact <a href={`mailto:${BUSINESS_EMAIL}`}>{BUSINESS_EMAIL}</a>.</p>
           </article>
         </div>
       </main>
