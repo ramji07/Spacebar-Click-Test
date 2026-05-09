@@ -1,0 +1,133 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timerRow,
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.timerBtn {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.timerBtn:hover,
+.active {
+  color: var(--neon-blue);
+  border-color: var(--neon-blue);
+}
+
+.clickArea {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  border: 2px solid var(--border-subtle);
+  border-radius: 20px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.clickArea:hover,
+.clickArea:focus-visible,
+.running {
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 28px rgba(0, 212, 255, 0.18);
+}
+
+.hint,
+.liveCount,
+.result {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 280px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-display);
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.liveCount,
+.result strong {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 900;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.result small {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  background: var(--grad-primary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.statsGrid div {
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-card);
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.statsGrid strong {
+  display: block;
+  color: var(--neon-blue);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.statsGrid span {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 520px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

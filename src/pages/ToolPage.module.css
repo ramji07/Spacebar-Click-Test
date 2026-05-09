@@ -1,0 +1,4 @@
+.page { padding: 60px 0 80px; min-height: calc(100vh - var(--nav-height)); }
+.header { text-align: center; margin-bottom: 48px; }
+.header h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); margin-bottom: 14px; }
+.header p { color: var(--text-secondary); font-size: 1rem; max-width: 540px; margin: 0 auto; line-height: 1.7; }

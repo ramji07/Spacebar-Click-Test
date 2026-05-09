@@ -1,0 +1,72 @@
+.wrapper {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+}
+
+.status strong {
+  color: var(--neon-blue);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--bg-card);
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(48px, 1fr);
+  gap: 8px;
+  min-width: 760px;
+}
+
+.key {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+.space {
+  grid-column: span 3;
+}
+
+.tested {
+  color: var(--text-primary);
+  border-color: rgba(0, 212, 255, 0.45);
+}
+
+.pressed {
+  color: #051018;
+  border-color: var(--neon-blue);
+  background: var(--neon-blue);
+  transform: translateY(2px);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.35);
+}
