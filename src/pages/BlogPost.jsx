@@ -12,27 +12,58 @@ export default function BlogPost() {
   const relatedPosts = blogPosts.filter(item => item.slug !== post.slug).slice(0, 3)
   const sectionId = (heading) => heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
   const canonical = `https://spacebarclicktest.net/guide/${post.slug}`
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    dateModified: post.date,
-    mainEntityOfPage: canonical,
-    url: canonical,
-    author: {
-      '@type': 'Organization',
-      name: 'SpacebarClickTest.net',
-      url: 'https://spacebarclicktest.net/',
+  const articleText = [post.title, post.description, post.intro, ...post.sections.flatMap(section => [section.heading, ...section.paragraphs])].join(' ')
+  const wordCount = articleText.trim().split(/\s+/).length
+  const schema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.description,
+      datePublished: post.date,
+      dateModified: post.date,
+      mainEntityOfPage: canonical,
+      url: canonical,
+      articleSection: post.category,
+      wordCount,
+      author: {
+        '@type': 'Person',
+        name: 'Anmol Chaurasiya',
+        jobTitle: 'Full-Stack Developer',
+        email: 'Anmolchaurasiya406@gmail.com',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'SpacebarClickTest.net',
+        url: 'https://spacebarclicktest.net/',
+      },
+      image: `https://spacebarclicktest.net${post.image}`,
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'SpacebarClickTest.net',
-      url: 'https://spacebarclicktest.net/',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://spacebarclicktest.net/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Guide',
+          item: 'https://spacebarclicktest.net/guide',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: post.title,
+          item: canonical,
+        },
+      ],
     },
-    image: `https://spacebarclicktest.net${post.image}`,
-  }
+  ]
 
   return (
     <>
@@ -62,6 +93,7 @@ export default function BlogPost() {
               <div className={styles.articleMeta}>
                 <time dateTime={post.date}>Updated {post.date}</time>
                 <span>{post.readTime}</span>
+                <span>{wordCount} words</span>
               </div>
               <img
                 className={styles.articleImage}

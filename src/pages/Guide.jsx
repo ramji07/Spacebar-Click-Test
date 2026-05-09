@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO/SEO'
-import { blogPosts } from '../data/blogPosts'
+import { blogMeta } from '../data/blogMeta'
 import styles from './Guide.module.css'
 
-const schema = {
+const schema = [
+  {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   name: 'SpacebarClickTest.net Guide',
@@ -14,7 +15,19 @@ const schema = {
     name: 'SpacebarClickTest.net',
     url: 'https://spacebarclicktest.net/',
   },
-}
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Spacebar and CPS Testing Guides',
+    itemListElement: blogMeta.map((post, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `https://spacebarclicktest.net/guide/${post.slug}`,
+      name: post.title,
+    })),
+  },
+]
 
 export default function Guide() {
   return (
@@ -35,7 +48,7 @@ export default function Guide() {
           </header>
 
           <section className={styles.grid} aria-label="Guide articles">
-            {blogPosts.map(post => (
+            {blogMeta.map(post => (
               <article key={post.slug} className={`glass-card ${styles.card}`}>
                 <Link to={`/guide/${post.slug}`} className={styles.cardImageLink} aria-label={post.title}>
                   <img
@@ -57,7 +70,7 @@ export default function Guide() {
                   <footer className={styles.meta}>
                     <time dateTime={post.date}>{post.date}</time>
                     <span>{post.readTime}</span>
-                    <span>{post.sections.length} sections</span>
+                    <span>{post.sectionCount} sections</span>
                   </footer>
                   <Link to={`/guide/${post.slug}`} className={styles.readMore}>Read full guide</Link>
                 </div>
